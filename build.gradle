@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+allprojects {
+    group 'com.huoranger'
+    version '1.0.0'
+
+    apply plugin: "java-library"
+
+    repositories {
+        mavenCentral()
+    }
+}
+
